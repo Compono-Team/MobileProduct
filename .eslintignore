@@ -1,0 +1,10 @@
+.vscode
+.yarn
+node_modules
+ios
+android
+vendor
+babel.config.js
+jest.config.js
+metro.config.js
+.eslintrc.js
