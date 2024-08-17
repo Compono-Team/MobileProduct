@@ -1,6 +1,7 @@
 {
   "name": "AXYZ",
-  "displayName": "AXYZ",
+  "slug": "AXYZ",
   "scheme": "AXYZ",
-  "plugins": ["expo-router"]
+  "plugins": ["expo-router"],
+  "userInterfaceStyle": "automatic"
 }
