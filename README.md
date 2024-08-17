@@ -1,5 +1,19 @@
 # Project I
 
+## Quick Start
+
+for Android
+
+```
+npx expo run:android
+```
+
+for Ios
+
+```
+npx expo run:ios
+```
+
 ## Project Structure
 
 src: This folder is the main container of all the code inside your application.
@@ -19,18 +33,20 @@ types: Folder to store all enum and interface used in application.
 assets: Asset folder to store all images, vectors, fonts, etc.
 
 ```
+
 .
-├── __tests__
+├── **tests**
 ├── src
-│   ├── assets
-│   ├── components
-│   ├── hooks
-│   ├── screens
-│   ├── services
-│   ├── utils
-│   ├── types
+│ ├── assets
+│ ├── components
+│ ├── hooks
+│ ├── screens
+│ ├── services
+│ ├── utils
+│ ├── types
 ├── App.tsx
 └── index.js
+
 ```
 
 ## Git Branch Naming Conventions
@@ -52,3 +68,7 @@ chore: Formatting, Adding tests, etc.
 refactor: Change code that does not fix bugs or add features
 
 docs: Commits that update documentation.
+
+```
+
+```
