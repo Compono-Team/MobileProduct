@@ -1,4 +1,7 @@
 {
   "name": "TestMobile",
-  "displayName": "TestMobile"
+  "displayName": "TestMobile",
+  "plugins": [
+    "expo-router"
+  ]
 }
