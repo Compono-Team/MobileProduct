@@ -1,7 +1,6 @@
 {
-  "name": "TestMobile",
-  "displayName": "TestMobile",
-  "plugins": [
-    "expo-router"
-  ]
+  "name": "AXYZ",
+  "displayName": "AXYZ",
+  "scheme": "AXYZ",
+  "plugins": ["expo-router"]
 }
