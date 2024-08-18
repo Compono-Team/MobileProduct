@@ -2,11 +2,11 @@ import React from 'react';
 import {Platform} from 'react-native';
 import * as AppleAuthentication from 'expo-apple-authentication';
 import {useSession} from '../../context/sessionContext';
-import { router } from 'expo-router';
+import {router} from 'expo-router';
 
 const AppleAuthLoginButton = () => {
   const {signIn} = useSession();
-  
+
   if (Platform.OS === 'ios') {
     return (
       <AppleAuthentication.AppleAuthenticationButton
