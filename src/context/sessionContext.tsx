@@ -1,5 +1,5 @@
 import {useContext, createContext, type PropsWithChildren} from 'react';
-import {useStorageState} from '../hooks/use-storage-state';
+import {useStorageState} from '@/hooks/use-storage-state';
 
 const AuthContext = createContext<{
   signIn: () => void;
