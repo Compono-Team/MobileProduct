@@ -2,6 +2,18 @@
   "name": "AXYZ",
   "slug": "AXYZ",
   "scheme": "AXYZ",
-  "plugins": ["expo-router"],
-  "userInterfaceStyle": "automatic"
+  "plugins": [
+    "expo-router",
+    "expo-apple-authentication",
+    [
+      "expo-secure-store",
+      {
+        "faceIDPermission": "Allow AXYZ to access your Face ID biometric data."
+      }
+    ]
+  ],
+  "userInterfaceStyle": "automatic",
+  "ios": {
+    "usesAppleSignIn": true
+  }
 }
