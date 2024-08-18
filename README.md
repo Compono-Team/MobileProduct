@@ -20,7 +20,7 @@ src: This folder is the main container of all the code inside your application.
 
 components: Folder to store any common component that you use through your app
 
-screens: Folder that contains all your application screens/features.
+app: Folder that contains all your application screens/features.
 
 hooks: Folder that contains custom React hooks.
 
@@ -36,11 +36,12 @@ assets: Asset folder to store all images, vectors, fonts, etc.
 
 .
 ├── **tests**
+├── assets
 ├── src
-│ ├── assets
+│ ├── app
 │ ├── components
 │ ├── hooks
-│ ├── screens
+│ ├── context
 │ ├── services
 │ ├── utils
 │ ├── types
@@ -68,7 +69,3 @@ chore: Formatting, Adding tests, etc.
 refactor: Change code that does not fix bugs or add features
 
 docs: Commits that update documentation.
-
-```
-
-```
