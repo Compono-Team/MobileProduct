@@ -2,6 +2,10 @@
   "name": "AXYZ",
   "slug": "AXYZ",
   "scheme": "AXYZ",
+  "userInterfaceStyle": "automatic",
+  "ios": {
+    "usesAppleSignIn": true
+  },
   "plugins": [
     "expo-router",
     "expo-apple-authentication",
@@ -10,10 +14,12 @@
       {
         "faceIDPermission": "Allow AXYZ to access your Face ID biometric data."
       }
+    ],
+    [
+      "@react-native-google-signin/google-signin",
+      {
+        "iosUrlScheme": "com.googleusercontent.apps._some_id_here_"
+      }
     ]
-  ],
-  "userInterfaceStyle": "automatic",
-  "ios": {
-    "usesAppleSignIn": true
-  }
+  ]
 }
