@@ -4,7 +4,11 @@
   "scheme": "AXYZ",
   "userInterfaceStyle": "automatic",
   "ios": {
-    "usesAppleSignIn": true
+    "usesAppleSignIn": true,
+    "bundleIdentifier": "com.anonymous.AXYZ"
+  },
+  "android": {
+    "package": "com.anonymous.AXYZ"
   },
   "plugins": [
     "expo-router",
