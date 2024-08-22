@@ -24,6 +24,28 @@
       {
         "iosUrlScheme": "com.googleusercontent.apps.209522027471-nj0g57d5d7v98b1o3rv3d9b8c2s9ldp6"
       }
+    ],
+    [
+      "expo-build-properties",
+      {
+        "android": {
+          "extraMavenRepos": [
+            "https://devrepo.kakao.com/nexus/content/groups/public/"
+          ]
+        }
+      }
+    ],
+    [
+      "@react-native-kakao/core",
+      {
+        "nativeAppKey": "f33b4b02431fe06cb3f8df2cca7be84a",
+        "android": {
+          "authCodeHandlerActivity": true
+        },
+        "ios": {
+          "handleKakaoOpenUrl": true
+        }
+      }
     ]
   ]
 }
