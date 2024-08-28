@@ -6,7 +6,7 @@ import {router} from 'expo-router';
 
 import {useSession} from '@/context/sessionContext';
 
-const KaKaoOAuthLoginButton = () => {
+const KaKaoAuthButton = () => {
   const {signIn} = useSession();
 
   const onKaKaoLoginPress = () => {
@@ -33,4 +33,4 @@ const KaKaoOAuthLoginButton = () => {
   );
 };
 
-export default KaKaoOAuthLoginButton;
+export default KaKaoAuthButton;

@@ -7,10 +7,10 @@ import {
 } from '@react-native-google-signin/google-signin';
 import {router} from 'expo-router';
 
-import {configureGoogleLogin} from '@/utils/googleLogin';
+import {configureGoogleSignIn} from '@/utils/googleSignIn';
 import {useSession} from '@/context/sessionContext';
 
-const GoogleOAuthLoginButton = () => {
+const GoogleAuthButton = () => {
   const {signIn} = useSession();
 
   const onGoogleLoginPress = async () => {
@@ -42,7 +42,7 @@ const GoogleOAuthLoginButton = () => {
   };
 
   useEffect(() => {
-    configureGoogleLogin();
+    configureGoogleSignIn();
   }, []);
 
   return (
@@ -54,4 +54,4 @@ const GoogleOAuthLoginButton = () => {
   );
 };
 
-export default GoogleOAuthLoginButton;
+export default GoogleAuthButton;

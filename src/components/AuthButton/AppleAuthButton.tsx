@@ -5,9 +5,9 @@ import {router} from 'expo-router';
 
 import {useSession} from '@/context/sessionContext';
 
-const AppleOAuthLoginButton = () => {
+const AppleAuthButton = () => {
   const {signIn} = useSession();
-  
+
   const onAppleLoginPress = async () => {
     try {
       const credential = await AppleAuthentication.signInAsync({
@@ -29,7 +29,7 @@ const AppleOAuthLoginButton = () => {
         // handle other errors
       }
     }
-  }
+  };
 
   if (Platform.OS === 'ios') {
     return (
@@ -45,4 +45,4 @@ const AppleOAuthLoginButton = () => {
   return <></>;
 };
 
-export default AppleOAuthLoginButton;
+export default AppleAuthButton;
