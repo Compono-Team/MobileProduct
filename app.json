@@ -3,6 +3,11 @@
   "slug": "AXYZ",
   "scheme": "AXYZ",
   "userInterfaceStyle": "automatic",
+  "splash": {
+    "image": "./assets/images/splash.png",
+    "resizeMode": "contain",
+    "backgroundColor": "#1C1D1F"
+  },
   "ios": {
     "usesAppleSignIn": true,
     "bundleIdentifier": "com.anonymous.AXYZ"
