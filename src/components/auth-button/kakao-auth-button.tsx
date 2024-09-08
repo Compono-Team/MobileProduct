@@ -1,20 +1,13 @@
 import React, {useEffect} from 'react';
-import {View, Image, TouchableOpacity} from 'react-native';
+import {Image, TouchableOpacity} from 'react-native';
 import {login} from '@react-native-kakao/user';
 import {initializeKakaoSDK} from '@react-native-kakao/core';
-import {router} from 'expo-router';
-
-import {useSession} from '@/context/sessionContext';
 
 const KaKaoAuthButton = () => {
-  const {signIn} = useSession();
-
   const onKaKaoLoginPress = () => {
     try {
       const userInfo = login();
       console.log(userInfo);
-      signIn();
-      router.replace('/');
     } catch (error) {
       console.error(error);
     }
