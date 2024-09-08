@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Image, Text} from 'react-native';
 
-import KaKaoAuthButton from '@/components/AuthButton/KaKaoAuthButton';
-import GoogleAuthButton from '@/components/AuthButton/GoogleAuthButton';
-import AppleAuthButton from '@/components/AuthButton/AppleAuthButton';
+import KaKaoAuthButton from '@/components/auth-button/kakao-auth-button';
+import GoogleAuthButton from '@/components/auth-button/google-auth-button';
+import AppleAuthButton from '@/components/auth-button/apple-auth-button';
 
 export default function SignIn() {
   return (
