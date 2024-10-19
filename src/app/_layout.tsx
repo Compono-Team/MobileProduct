@@ -1,4 +1,5 @@
-import {Slot} from 'expo-router';
+import React from 'react';
+import {Stack} from 'expo-router';
 import {StatusBar} from 'expo-status-bar';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
@@ -13,7 +14,22 @@ export default function RootLayout() {
       <GluestackUIProvider>
         <SessionProvider>
           <StatusBar style="light" />
-          <Slot />
+          <Stack
+            screenOptions={{
+              headerShown: false,
+              headerShadowVisible: false,
+              headerStyle: {
+                backgroundColor: 'transparent',
+              },
+              headerTintColor: '#fff',
+              headerTitleAlign: 'center',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+              headerBackTitleVisible: false,
+            }}>
+            <Stack.Screen name="edit-profile" options={{headerShown: true}} />
+          </Stack>
         </SessionProvider>
       </GluestackUIProvider>
     </SafeAreaProvider>
