@@ -7,7 +7,7 @@ import {
 } from '@react-native-google-signin/google-signin';
 import {router} from 'expo-router';
 
-import {configureGoogleSignIn} from '@/utils/google-signIn';
+import {configureGoogleSignIn} from '@/utils/google-signin';
 import {useSession} from '@/context/session-context';
 
 const GoogleAuthButton = () => {
