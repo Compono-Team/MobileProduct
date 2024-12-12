@@ -5,7 +5,7 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 import {GluestackUIProvider} from '@/components/ui/gluestack-ui-provider';
-import {SessionProvider} from '@/context/sessionContext';
+import {SessionProvider} from '@/context/session-context';
 
 import '../../global.css';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Redirect, Tabs} from 'expo-router';
 import BottomTabBar from '@/components/bottom-tab-bar';
-import {useSession} from '@/context/sessionContext';
+import {useSession} from '@/context/session-context';
 import type {BottomTabBarProps} from '@react-navigation/bottom-tabs';
 
 export default function AppLayout() {

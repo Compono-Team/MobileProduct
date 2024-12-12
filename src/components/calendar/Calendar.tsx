@@ -12,7 +12,7 @@ import {
 } from 'date-fns';
 import {ko} from 'date-fns/locale';
 import CalendarIcon from '@/assets/images/icon/calendar.svg';
-import {useCalendarStore} from '@/stores/useCalendarStore';
+import {useCalendarStore} from '@/stores/use-calendar-store';
 import PagerView, {PagerViewOnPageSelectedEvent} from 'react-native-pager-view';
 
 const Calendar: React.FC = () => {
