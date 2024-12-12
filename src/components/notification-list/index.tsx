@@ -22,7 +22,7 @@ export const NotificationList: React.FC<NotificationListProps> = ({notifications
   };
 
   return (
-    <ScrollView className="flex-1 bg-[#121212] py-4">
+    <ScrollView className="flex-1 bg-[#121212] py-4 min-h-[18px]">
       {notifications.map((notification) => (
         <View key={notification.id} className="mb-3.5">
           <NotificationCard>
