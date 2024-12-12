@@ -28,7 +28,7 @@ const Timeline: React.FC<TimelineProps> = ({events}) => {
           width: `${width}%`,
           backgroundColor: event.color,
         }}
-        onPress={() => setSelectedEvent(event)}
+        onPress={() => setSelectedEvent(selectedEvent === event ? null : event)}
       />
     );
   };
@@ -61,7 +61,7 @@ const Timeline: React.FC<TimelineProps> = ({events}) => {
         {['00', '06', '12', '18', '24'].map((_, index) => (
           <View
             key={index}
-            className="absolute top-5 bottom-0 w-[1px] bg-[#333333]"
+            className="absolute top-8 bottom-0 w-[1px] bg-[#333333]"
             style={{left: `${index * 25}%`}}
           />
         ))}
