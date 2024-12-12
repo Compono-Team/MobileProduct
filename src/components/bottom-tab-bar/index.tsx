@@ -11,7 +11,7 @@ import MyIcon from '@/assets/images/icon/my.svg';
 const icons = {
   index: TimelineIcon,
   todo: TodoIcon,
-  calendar: CalendarIcon,
+  // calendar: CalendarIcon,
   my: MyIcon,
 };
 

@@ -3,7 +3,7 @@ import {Platform} from 'react-native';
 import * as AppleAuthentication from 'expo-apple-authentication';
 import {router} from 'expo-router';
 
-import {useSession} from '@/context/sessionContext';
+import {useSession} from '@/context/session-context';
 
 const AppleAuthButton = () => {
   const {signIn} = useSession();
